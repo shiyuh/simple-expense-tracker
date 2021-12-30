@@ -5,8 +5,8 @@ function Expenses(props) {
     return (
         <div className="expenses">
             {
-                props.expenses.map(function(expense) {
-                    return <ExpenseItem title={expense.title} date={expense.date} amount={expense.amount} />
+                props.expenses.map(function(expense, i) {
+                    return <ExpenseItem key={i} title={expense.title} date={expense.date} amount={expense.amount} />
                 })
             }
         </div>
