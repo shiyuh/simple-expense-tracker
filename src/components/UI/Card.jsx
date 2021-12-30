@@ -1,6 +1,6 @@
 import "./Card.scss"
 
-function Card(props) {
+const Card = (props) => {
     // make sure "className" attribute works with custom components
     const classes = 'card ' + props.className;
     
